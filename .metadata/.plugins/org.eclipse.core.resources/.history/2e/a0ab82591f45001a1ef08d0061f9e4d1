@@ -1,0 +1,35 @@
+package desafio4;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		String input = new String();
+		String[][] matriz = new String [40][3];
+		
+		Scanner leitura = new Scanner(System.in);
+		System.out.println("Insira a palavra/frase que deseja converter: ");
+		input = leitura.nextLine();
+		leitura.close();
+		input = input.toLowerCase();
+		
+		preencherMatriz(matriz, input);
+		
+	}
+	
+	public static void preencherMatriz(String[][] matriz, String input) {
+		int linha = 0;
+		do {
+			
+			for (int i = 0; i < input.length(); i++) {
+				char letra = input.charAt(i);
+				
+				switch (letra) {
+					case 'a': 
+				}
+			}
+			
+		}while(linha != 2);
+	}
+}

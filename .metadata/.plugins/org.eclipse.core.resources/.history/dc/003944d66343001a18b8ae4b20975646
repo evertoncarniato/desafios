@@ -1,0 +1,34 @@
+package desafio1;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		float peso = 0.0f;
+		float altura = 0.0f;
+		float imc = 0.0f;
+		
+		Scanner leitura = new Scanner(System.in);
+		
+		System.out.println("======== CÁLCULO DO IMC ========");
+		System.out.println("Para calcular o IMC, informe os dados a seguir.");
+		System.out.println("Peso (Kg): ");
+		peso = leitura.nextFloat();
+		System.out.println("Altura (m): ");
+		altura = leitura.nextFloat();
+		
+		imc = calcularImc(peso, altura);
+		System.out.println(imc);
+		
+		leitura.close();
+	}
+	
+	public static float calcularImc(float peso, float altura) {
+		float imc = 0.0f;
+		
+		imc = peso / (altura*altura);
+		
+		return imc;
+	}
+}

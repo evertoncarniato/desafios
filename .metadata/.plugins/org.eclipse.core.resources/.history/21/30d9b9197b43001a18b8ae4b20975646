@@ -1,0 +1,28 @@
+package desafio4;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		String input = new String();
+		
+		Scanner leitura = new Scanner(System.in);
+		System.out.println("Insira a palavra/frase que deseja converter: ");
+		input = leitura.nextLine();
+		leitura.close();
+		
+		converter(input);
+	}
+	
+	public static void converter (String input) {
+		
+		for (int i = 0; i < input.length(); i++) {
+			char letra = input.charAt(i);
+			if (letra == 'a' || letra == 'A') {
+				System.out.println("/\\\r\n" + 
+						"/~~\\");
+			}
+		}
+	}
+}

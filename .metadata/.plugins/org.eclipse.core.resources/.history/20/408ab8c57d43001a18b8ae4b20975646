@@ -1,0 +1,154 @@
+package desafio4;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		String input = new String();
+		
+		Scanner leitura = new Scanner(System.in);
+		System.out.println("Insira a palavra/frase que deseja converter: ");
+		input = leitura.nextLine();
+		leitura.close();
+		
+		converter(input);
+	}
+	
+	public static void converter (String input) {
+		
+		for (int i = 0; i < input.length(); i++) {
+			char letra = input.charAt(i);
+			if (letra == 'a' || letra == 'A') {
+				System.out.println(" /\\\r\n" + 
+						"/~~\\");
+				
+			} else if (letra == 'b' || letra == 'B') {
+					System.out.println("  __  \r\n" + 
+							"|__) \r\n" + 
+							"|__)");
+					
+			} else if (letra == 'c' || letra == 'C') {
+				System.out.println(" __  \r\n" + 
+						"/  ` \r\n" + 
+						"\\__, ");
+				
+			} else if (letra == 'd' || letra == 'D') {
+				System.out.println(" __  \r\n" + 
+						"|  \\ \r\n" + 
+						"|__/ ");
+				
+			} else if (letra == 'e' || letra == 'E') {
+				System.out.println(" ___ \r\n" + 
+						"|__  \r\n" + 
+						"|___");
+				
+			} else if (letra == 'f' || letra == 'F') {
+				System.out.println(" ___ \r\n" + 
+						"|__  \r\n" + 
+						"|    ");
+				
+			} else if (letra == 'g' || letra == 'G') {
+				System.out.println(" __  \r\n" + 
+						"/ _` \r\n" + 
+						"\\__> ");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			 } else if (letra == 'b' || letra == 'B') {
+					System.out.println("  __  \r\n" + 
+							"|__) \r\n" + 
+							"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+			} else if (letra == 'b' || letra == 'B') {
+				System.out.println("  __  \r\n" + 
+						"|__) \r\n" + 
+						"|__)");
+		}
+		}
+	}
+}

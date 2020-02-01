@@ -1,0 +1,51 @@
+package desafio4;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		String input = new String();
+		
+		Scanner leitura = new Scanner(System.in);
+		System.out.println("Insira a palavra/frase que deseja converter: ");
+		input = leitura.nextLine();
+		leitura.close();
+		input = input.toLowerCase();
+		
+		desenharAscii(input);
+		
+	}
+	
+	public static void desenharAscii(String input) {
+		
+		for (int i1 = 0; i1 < input.length(); i1++) {
+			char letra = input.charAt(i1);
+			if (letra == 'a') {
+				System.out.printf("     ");
+			} else if (letra == 'b') {
+				System.out.printf(" __  ");
+			}
+		}
+		System.out.println();
+		
+		for (int i2 = 0; i2 < input.length(); i2++) {
+			char letra = input.charAt(i2);
+			if (letra == 'a') {
+				System.out.printf(" /\\  ");
+			} else if (letra == 'b') {
+				System.out.printf("|__) ");
+			}
+		}
+		System.out.println();
+		
+		for (int i3 = 0; i3 < input.length(); i3++) {
+			char letra = input.charAt(i3);
+			if (letra == 'a') {
+				System.out.printf("/~~\\ ");
+			} else if (letra == 'b') {
+				System.out.printf("|__) ");
+			}
+		}
+	}
+}

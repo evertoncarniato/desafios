@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\Pastas Windows\Área de Trabalho\Dev\desafios\.metadata\.plugins\org.eclipse.jdt.core
+2303857458.index
+113558702.index

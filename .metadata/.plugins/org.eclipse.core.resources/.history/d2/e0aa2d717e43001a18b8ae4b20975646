@@ -1,0 +1,141 @@
+package desafio4;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		String input = new String();
+		
+		Scanner leitura = new Scanner(System.in);
+		System.out.printf("Insira a palavra/frase que deseja converter: ");
+		input = leitura.nextLine();
+		leitura.close();
+		
+		converter(input);
+	}
+	
+	public static void converter (String input) {
+		
+		for (int i = 0; i < input.length(); i++) {
+			char letra = input.charAt(i);
+			if (letra == 'a' || letra == 'A') {
+				System.out.printf(" /\\\r\n" + 
+						"/~~\\");
+				
+			} else if (letra == 'b' || letra == 'B') {
+					System.out.printf(" __  \r\n" + 
+							"|__) \r\n" + 
+							"|__)");
+					
+			} else if (letra == 'c' || letra == 'C') {
+				System.out.printf(" __  \r\n" + 
+						"/  ` \r\n" + 
+						"\\__, ");
+				
+			} else if (letra == 'd' || letra == 'D') {
+				System.out.printf(" __  \r\n" + 
+						"|  \\ \r\n" + 
+						"|__/ ");
+				
+			} else if (letra == 'e' || letra == 'E') {
+				System.out.printf(" ___ \r\n" + 
+						"|__  \r\n" + 
+						"|___");
+				
+			} else if (letra == 'f' || letra == 'F') {
+				System.out.printf(" ___ \r\n" + 
+						"|__  \r\n" + 
+						"|    ");
+				
+			} else if (letra == 'g' || letra == 'G') {
+				System.out.printf(" __  \r\n" + 
+						"/ _` \r\n" + 
+						"\\__> ");
+				
+			} else if (letra == 'h' || letra == 'H') {
+				System.out.printf("|__| \r\n" + 
+						"|  | ");
+				
+			} else if (letra == 'i' || letra == 'I') {
+				System.out.printf("|    \r\n" + 
+						"| ");
+				
+			} else if (letra == 'j' || letra == 'J') {
+				System.out.printf("   | \r\n" + 
+						"\\__/ ");
+				
+			} else if (letra == 'k' || letra == 'K') {
+				System.out.printf("|__/ \r\n" + 
+						"|  \\ ");
+				
+			} else if (letra == 'l' || letra == 'L') {
+				System.out.printf("|    \r\n" + 
+						"|___ ");
+				
+			} else if (letra == 'm' || letra == 'M') {
+				System.out.printf(" |\\/|\r\n" + 
+						" |  |");
+				
+			} else if (letra == 'n' || letra == 'N') {
+				System.out.printf("|\\ | \r\n" + 
+						"| \\|");
+				
+			} else if (letra == 'o' || letra == 'O') {
+				System.out.printf(" __  \r\n" + 
+						"/  \\ \r\n" + 
+						"\\__/");
+				
+			} else if (letra == 'p' || letra == 'P') {
+				System.out.printf(" __  \r\n" + 
+						"|__) \r\n" + 
+						"|    ");
+				
+			} else if (letra == 'q' || letra == 'Q') {
+				System.out.printf(" __  \r\n" + 
+						"/  \\ \r\n" + 
+						"\\__X ");
+				
+			} else if (letra == 'r' || letra == 'R') {
+				System.out.printf(" __  \r\n" + 
+						"|__) \r\n" + 
+						"|  \\ ");
+				
+			} else if (letra == 's' || letra == 'S') {
+				System.out.printf(" __  \r\n" + 
+						"/__` \r\n" + 
+						".__/ ");
+				
+			} else if (letra == 't' || letra == 'T') {
+				System.out.printf("___  \r\n" + 
+						" |   \r\n" + 
+						" |   ");
+				
+			 } else if (letra == 'u' || letra == 'U') {
+					System.out.printf("|  | \r\n" + 
+							"\\__/ ");
+					
+			} else if (letra == 'v' || letra == 'V') {
+				System.out.printf("\\  / \r\n" + 
+						" \\/  ");
+				
+			} else if (letra == 'w' || letra == 'W') {
+				System.out.printf("|  | \r\n" + 
+						"|/\\| ");
+				
+			} else if (letra == 'x' || letra == 'X') {
+				System.out.printf("\\_/  \r\n" + 
+						"/ \\  ");
+				
+			} else if (letra == 'y' || letra == 'Y') {
+				System.out.printf("\\ /  \r\n" + 
+						" |   ");
+				
+			} else if (letra == 'z' || letra == 'Z') {
+				System.out.printf("__   \r\n" + 
+						" /   \r\n" + 
+						"/_   ");
+			}
+		}
+	}
+}

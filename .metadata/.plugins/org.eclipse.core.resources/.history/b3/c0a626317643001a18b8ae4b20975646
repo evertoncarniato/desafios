@@ -1,0 +1,21 @@
+package desafio3;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		String input = new String();
+		
+		Scanner leitura = new Scanner(System.in);
+		System.out.println("Insira a palavra/frase que deseja converter: ");
+		input = leitura.nextLine();
+		leitura.close();
+		
+		input.toLowerCase();
+		input = input.replaceAll("[^a-zA-Z]+", "");
+		
+		System.out.println(input);
+		
+	}
+}

@@ -1,0 +1,53 @@
+package desafio1;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		float peso = 0.0f;
+		float altura = 0.0f;
+		float imc = 0.0f;
+		
+		Scanner leitura = new Scanner(System.in);
+		
+		System.out.println("================ CÁLCULO DO IMC ================");
+		System.out.println("Para calcular o IMC, informe os dados a seguir.");
+		System.out.printf("Peso (Kg): ");
+		peso = leitura.nextFloat();
+		System.out.printf("Altura (m): ");
+		altura = leitura.nextFloat();
+		leitura.close();
+		
+		imc = calcularImc(peso, altura);
+		if (imc < 16) {
+			System.out.printf("Resultado do IMC: %.2f %n", imc);
+			System.out.println("Sua situação é de Subpeso severo!");
+		} else if (imc >= 16 && imc < 19.9) {
+			System.out.printf("Resultado do IMC: %.2f %n", imc);
+			System.out.println("Sua situação é de Subpeso!");
+		} else if (imc >= 20 && imc < 24.9) {
+			System.out.printf("Resultado do IMC: %.2f %n", imc);
+			System.out.println("Sua situação é Normal!");
+		} else if (imc >= 25 && imc < 29.9) {
+			System.out.printf("Resultado do IMC: %.2f %n", imc);
+			System.out.println("Sua situação é de Sobrepeso!");
+		} else if (imc >= 30 && imc < 39.9) {
+			System.out.printf("Resultado do IMC: %.2f %n", imc);
+			System.out.println("Sua situação é de Obesidade!");
+		} else if (imc >= 40) {
+			System.out.printf("Resultado do IMC: %.2f %n", imc);
+			System.out.println("Sua situação é de Obesidade Mórbida!");
+		}
+		
+		
+	}
+	
+	public static float calcularImc(float peso, float altura) {
+		float imc = 0.0f;
+		
+		imc = peso / (altura*altura);
+		
+		return imc;
+	}
+}

@@ -1,0 +1,31 @@
+package desafio2;
+
+import java.io.IOException;
+import java.net.InetAddress;
+
+public class App {
+
+	public static void main(String[] args) throws IOException {
+		
+		boolean isConnected = true;
+		boolean stop = false;
+		
+		while (stop != true) {
+			isConnected = verificarConexao();			
+			System.out.println((isConnected == true) ? "Você está conectado!" : "Que pena! Você não tem conexão no momento.");
+		}
+		
+		
+	}
+	
+	public static boolean verificarConexao() throws IOException {
+		InetAddress url = InetAddress.getByName("www.google.com");
+		int timeout = 5000;
+		
+		if (url.isReachable(timeout)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+}
